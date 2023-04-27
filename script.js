@@ -15,12 +15,6 @@ projects.forEach(({ name }, i) => {
 			<img src="/${name}/design/desktop-design.jpg" alt="${name}" />
 			<p>${i + 1}. ${formatProjectName(name)}</p>
 		</a>
-
-		<div class="links-container">
-			<a href="/${name}/index.html" class="blue">
-				<i class="fas fa-eye"></i>
-			</a>
-		</div>
 	`;
 
   list.appendChild(listItem);
