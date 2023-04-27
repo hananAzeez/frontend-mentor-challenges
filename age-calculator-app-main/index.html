@@ -12,21 +12,52 @@
 <body>
   <div class="container">
     <div class="content">
+
+      <!-- \\\\\\\\\\\\\\\\\\\ -->
+      <!-- INPUTS -->
+      <!-- \\\\\\\\\\\\\\\\\\\ -->
+
       <div class="inputs">
         <label for="day" class="input">DAY
-          <input type="number" min="1" max="31" id="day" name="day">
+          <input type="number" min="1" max="31" id="day" name="day" required>
         </label>
         <label for="month" class="input">MONTH
-          <input type="number" min="1" max="12" id="month" name="month">
+          <input type="number" min="1" max="12" id="month" name="month" required>
         </label>
-        <label for="year" class="input">YEAR
-          <input type="number" min="1" max="31" id="year" name="year">
+        <label for="day" class="input">YEAR
+          <input type="number" min="1" max="31" id="year" name="year" required>
         </label>
       </div>
-      <div class="submit"></div>
-      <div class="result"></div>
+
+      <!-- \\\\\\\\\\\\\\\\\\\ -->
+      <!-- SUBMIT -->
+      <!-- \\\\\\\\\\\\\\\\\\\ -->
+
+      <div class="submit">
+        <div class="line">
+          <div class="arrow-circle" id="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 44 44">
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- \\\\\\\\\\\\\\\\\\\ -->
+      <!-- RESULT -->
+      <!-- \\\\\\\\\\\\\\\\\\\ -->
+
+      <div class="result">
+        <p class="result-text"><span class="year-result result-number" id="year-result">38</span> years</p>
+        <p class="result-text"><span class="month-result result-number" id="month-result">3</span> months</p>
+        <p class="result-text"><span class="day-result result-number" id="day-result">27</span> days</p>
+      </div>
     </div>
   </div>
+
+  <script src="/age-calculator-app-main/script.js"></script>
 </body>
 
 </html>
