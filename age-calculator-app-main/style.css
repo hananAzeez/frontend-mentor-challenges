@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --lightRed: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --offWhite: hsl(0, 0%, 94%);
+  --lightGrey: hsl(0, 0%, 86%);
+  --smokeyGrey: hsl(0, 1%, 44%);
+  --offBlack: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/age-calculator-app-main/assets/fonts/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/age-calculator-app-main/assets/fonts/Poppins-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/age-calculator-app-main/assets/fonts/Poppins-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/age-calculator-app-main/assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/age-calculator-app-main/assets/fonts/Poppins-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/age-calculator-app-main/assets/fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: var(--offWhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  background-color: var(--white);
+  padding: 24px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+label {
+  color: var(--smokeyGrey);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  border: 1px solid var(--lightGrey);
+  font-family: "Poppins", Tahoma;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+}
