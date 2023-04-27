@@ -18,15 +18,24 @@
       <!-- \\\\\\\\\\\\\\\\\\\ -->
 
       <div class="inputs">
-        <label for="day" class="input">DAY
+        <div class="input">
+          <label for="day" id="dayLabel">DAY
+          </label>
           <input type="number" min="1" max="31" id="day" name="day" placeholder="DD" required>
-        </label>
-        <label for="month" class="input">MONTH
+          <p class="error-text" id="day-error-text"></p>
+        </div>
+        <div class="input">
+          <label for="month" id="monthLabel">MONTH
+          </label>
           <input type="number" min="1" max="12" id="month" name="month" placeholder="MM" required>
-        </label>
-        <label for="day" class="input">YEAR
+          <p class="error-text" id="month-error-text"></p>
+        </div>
+        <div class="input">
+          <label for="day" id="yearLabel">YEAR
+          </label>
           <input type="number" min="1" max="31" id="year" name="year" placeholder="YYYY" required>
-        </label>
+          <p class="error-text" id="year-error-text"></p>
+        </div>
       </div>
 
       <!-- \\\\\\\\\\\\\\\\\\\ -->
