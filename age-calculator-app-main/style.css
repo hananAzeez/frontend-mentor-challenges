@@ -101,6 +101,11 @@ input {
   max-width: 100px;
 }
 
+input:focus {
+  border-color: rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
 .input {
   display: flex;
   flex-direction: column;
