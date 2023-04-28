@@ -26,13 +26,15 @@ const currentDay = today.getDate();
 const currentMonth = today.getMonth() + 1;
 const currentYear = today.getFullYear();
 
+console.log("typeof", typeof currentDay);
+
 // FUNCTIONS
 const checkMonth = (month, year) => {
   if (Number(year) === currentYear && month > currentMonth) {
     const isValid = false;
     const errorText = "Must be in the past";
     return { isValid, errorText };
-  } else if (month <= 1 || month >= 12 || month == 0 || month == "") {
+  } else if (month < 1 || month > 12 || month == 0 || month == "") {
     const isValid = false;
     const errorText = "This field is required";
     return { isValid, errorText };
@@ -42,10 +44,39 @@ const checkMonth = (month, year) => {
     return { isValid, errorText };
   }
 };
-const checkDay = (day) => {
-  const isValid = day >= 1 && day <= 31 && day !== 0 && day !== "";
-  return isValid;
+
+const checkDay = (day, month, year) => {
+  if (
+    Number(year) === currentYear &&
+    Number(month) === currentMonth &&
+    day >= currentDay
+  ) {
+    const isValid = false;
+    const errorText = "Must be in the past";
+    return { isValid, errorText };
+  } else if (day < 1) {
+    const isValid = false;
+    const errorText = "This field is required";
+    return { isValid, errorText };
+  } else if (month === 2 && day > 29) {
+    const isValid = false;
+    const errorText = "Must be below 29";
+    return { isValid, errorText };
+  } else if (day > 31) {
+    const isValid = false;
+    const errorText = "Must be below 31";
+    return { isValid, errorText };
+  } else if (day == 0 && day == "") {
+    const isValid = false;
+    const errorText = "This field is required";
+    return { isValid, errorText };
+  } else {
+    const isValid = true;
+    const errorText = "";
+    return { isValid, errorText };
+  }
 };
+
 const checkYear = (year) => {
   if (year == "" || year == 0) {
     const isValid = false;
@@ -102,12 +133,12 @@ submit.addEventListener("click", () => {
   const yearValue = year.value;
 
   const isValidMonth = checkMonth(monthValue, yearValue);
-  const isValidDay = checkDay(dayValue);
+  const isValidDay = checkDay(dayValue, monthValue, yearValue);
   const isValidYear = checkYear(yearValue);
 
   // DAY CHECK
-  !isValidDay &&
-    ((dayErrorText.innerHTML = "Must be a valid day"),
+  !isValidDay.isValid &&
+    ((dayErrorText.innerHTML = isValidDay.errorText),
     dayErrorText.classList.remove("hidden"));
 
   !isValidMonth.isValid &&
@@ -120,17 +151,23 @@ submit.addEventListener("click", () => {
 
   console.log("year error: ", isValidYear.errorText);
   // RESULT
-  let resultYear = isValidYear && currentYear - yearValue;
-  let resultMonth = isValidMonth && currentMonth - monthValue;
-  let resultDay = isValidDay && currentDay - dayValue;
+  let resultYear = isValidYear.isValid && currentYear - yearValue;
+  let resultMonth = isValidMonth.isValid && currentMonth - monthValue;
+  let resultDay = isValidDay.isValid && currentDay - dayValue;
 
   if (resultMonth < 0) {
     resultMonth += 12;
     resultYear -= 1;
   }
 
-  const isValidForm = isValidDay && isValidMonth.isValid && isValidYear.isValid;
-  console.log("month: ", isValidMonth.isValid);
+  if (resultDay < 0) {
+    resultDay += 30;
+    resultMonth -= 1;
+  }
+
+  const isValidForm =
+    isValidDay.isValid && isValidMonth.isValid && isValidYear.isValid;
+  console.log("month: ", isValidMonth.isValid, monthValue);
 
   !isValidForm && day.classList.add("error"),
     month.classList.add("error"),
