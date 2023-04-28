@@ -16,35 +16,35 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url(/age-calculator-app-main/assets/fonts/Poppins-Bold.ttf);
+  src: url(/age-calculator-app/assets/fonts/Poppins-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(/age-calculator-app-main/assets/fonts/Poppins-BoldItalic.ttf);
+  src: url(/age-calculator-app/assets/fonts/Poppins-BoldItalic.ttf);
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(/age-calculator-app-main/assets/fonts/Poppins-ExtraBold.ttf);
+  src: url(/age-calculator-app/assets/fonts/Poppins-ExtraBold.ttf);
   font-weight: 800;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(/age-calculator-app-main/assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  src: url(/age-calculator-app/assets/fonts/Poppins-ExtraBoldItalic.ttf);
   font-weight: 800;
   font-style: italic;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(/age-calculator-app-main/assets/fonts/Poppins-Italic.ttf);
+  src: url(/age-calculator-app/assets/fonts/Poppins-Italic.ttf);
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(/age-calculator-app-main/assets/fonts/Poppins-Regular.ttf);
+  src: url(/age-calculator-app/assets/fonts/Poppins-Regular.ttf);
   font-weight: 400;
 }
 
