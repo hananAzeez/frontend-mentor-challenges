@@ -1,10 +1,11 @@
 const projects = [
   {
     name: "qr-code-component",
-    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/qr-code-component-main",
+    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/qr-code-component",
   },
   {
     name: "age-calculator-app",
+    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/age-calculator-app",
   },
 ];
 
