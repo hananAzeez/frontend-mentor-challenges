@@ -27,9 +27,20 @@ const currentMonth = today.getMonth() + 1;
 const currentYear = today.getFullYear();
 
 // FUNCTIONS
-const checkMonth = (month) => {
-  const isValid = month >= 1 && month <= 12 && month !== 0 && month !== "";
-  return isValid;
+const checkMonth = (month, year) => {
+  if (Number(year) === currentYear && month > currentMonth) {
+    const isValid = false;
+    const errorText = "Must be in the past";
+    return { isValid, errorText };
+  } else if (month <= 1 || month >= 12 || month == 0 || month == "") {
+    const isValid = false;
+    const errorText = "This field is required";
+    return { isValid, errorText };
+  } else {
+    const isValid = month >= 1 && month <= 12 && month !== 0 && month !== "";
+    const errorText = "";
+    return { isValid, errorText };
+  }
 };
 const checkDay = (day) => {
   const isValid = day >= 1 && day <= 31 && day !== 0 && day !== "";
@@ -56,12 +67,41 @@ const checkYear = (year) => {
   }
 };
 
+const finalSubmit = (isValidForm, resultYear, resultMonth, resultDay) => {
+  if (isValidForm) {
+    yearResult.innerHTML = resultYear;
+    yearErrorText.classList.add("hidden");
+    year.classList.remove("error");
+
+    monthResult.innerHTML = resultMonth;
+    monthErrorText.classList.add("hidden");
+    month.classList.remove("error");
+
+    dayResult.innerHTML = resultDay;
+    dayErrorText.classList.add("hidden");
+    day.classList.remove("error");
+  }
+};
+
+const initState = () => {
+  yearErrorText.classList.add("hidden");
+  year.classList.remove("error");
+
+  monthErrorText.classList.add("hidden");
+  month.classList.remove("error");
+
+  dayErrorText.classList.add("hidden");
+  day.classList.remove("error");
+};
+
 submit.addEventListener("click", () => {
+  initState();
+
   const dayValue = day.value;
   const monthValue = month.value;
   const yearValue = year.value;
 
-  const isValidMonth = checkMonth(monthValue);
+  const isValidMonth = checkMonth(monthValue, yearValue);
   const isValidDay = checkDay(dayValue);
   const isValidYear = checkYear(yearValue);
 
@@ -70,13 +110,15 @@ submit.addEventListener("click", () => {
     ((dayErrorText.innerHTML = "Must be a valid day"),
     dayErrorText.classList.remove("hidden"));
 
-  !isValidMonth &&
-    ((monthErrorText.innerHTML = "Must be a valid month"),
+  !isValidMonth.isValid &&
+    ((monthErrorText.innerHTML = isValidMonth.errorText),
     monthErrorText.classList.remove("hidden"));
 
-  !isValidYear &&
+  !isValidYear.isValid &&
     ((yearErrorText.innerHTML = isValidYear.errorText),
     yearErrorText.classList.remove("hidden"));
+
+  console.log("year error: ", isValidYear.errorText);
   // RESULT
   let resultYear = isValidYear && currentYear - yearValue;
   let resultMonth = isValidMonth && currentMonth - monthValue;
@@ -87,22 +129,12 @@ submit.addEventListener("click", () => {
     resultYear -= 1;
   }
 
-  const isValidForm = isValidDay && isValidMonth && isValidYear.isValid;
+  const isValidForm = isValidDay && isValidMonth.isValid && isValidYear.isValid;
+  console.log("month: ", isValidMonth.isValid);
 
   !isValidForm && day.classList.add("error"),
     month.classList.add("error"),
     year.classList.add("error");
 
-  isValidForm &&
-    ((yearResult.innerHTML = resultYear),
-    yearErrorText.classList.add("hidden"),
-    year.classList.remove("error"));
-  isValidForm &&
-    ((monthResult.innerHTML = resultMonth),
-    monthErrorText.classList.add("hidden"),
-    month.classList.remove("error"));
-  isValidForm &&
-    ((dayResult.innerHTML = resultDay),
-    dayErrorText.classList.add("hidden"),
-    day.classList.remove("error"));
+  finalSubmit(isValidForm, resultYear, resultMonth, resultDay);
 });

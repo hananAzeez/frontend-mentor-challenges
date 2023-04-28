@@ -116,7 +116,7 @@ input:focus {
 .error-text {
   font-style: italic;
   color: var(--lightRed);
-  font-size: 12px;
+  font-size: 11px;
 }
 /* second section */
 .line {
