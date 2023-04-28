@@ -1,19 +1,28 @@
 const projects = [
   {
     name: "qr-code-component-main",
+    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/qr-code-component-main",
+  },
+  {
+    name: "age-calculator-app-main",
   },
 ];
 
 const list = document.getElementById("list");
 
-projects.forEach(({ name }, i) => {
+projects.forEach(({ name, repo }, i) => {
   const listItem = document.createElement("li");
   console.log(1);
 
   listItem.innerHTML = `
 		<a href="/${name}/index.html">
-			<img src="/${name}/design/desktop-design.jpg" alt="${name}" />
-			<p>${i + 1}. ${formatProjectName(name)}</p>
+      <div class="image">
+			  <img src="/${name}/design/desktop-design.jpg" alt="${name}" />
+      </div>
+      <div class="text">
+			  <p>${formatProjectName(name)}</p>
+        <a href="${repo}" class="repo" blank>Github repo</a>
+      </div>
 		</a>
 	`;
 
