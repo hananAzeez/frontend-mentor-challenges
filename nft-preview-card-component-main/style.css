@@ -35,3 +35,40 @@ body {
     font-weight: 300;
     font-size: 22px;
 }
+
+.price_duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price_duration p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.price p {
+    color: #00FFF8;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.duration p {
+    font-weight: 400;
+    font-size: 18px;
+}
