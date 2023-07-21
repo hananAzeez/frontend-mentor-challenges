@@ -7,6 +7,10 @@ const projects = [
     name: "age-calculator-app",
     repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/age-calculator-app",
   },
+  {
+    name: "nft-preview-card-component-main",
+    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/nft-preview-card-component-main",
+  },
 ];
 
 const list = document.getElementById("list");
