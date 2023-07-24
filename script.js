@@ -8,7 +8,7 @@ const projects = [
     repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/age-calculator-app",
   },
   {
-    name: "nft-preview-card-component-main",
+    name: "nft-preview-card-component",
     repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/nft-preview-card-component-main",
   },
 ];
