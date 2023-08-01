@@ -11,6 +11,10 @@ const projects = [
     name: "nft-preview-card-component",
     repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/nft-preview-card-component-main",
   },
+  {
+    name: "interactive comment section",
+    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/nft-preview-card-component-main",
+  },
 ];
 
 const list = document.getElementById("list");
