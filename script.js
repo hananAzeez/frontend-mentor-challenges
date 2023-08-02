@@ -12,12 +12,12 @@ const projects = [
   {
     id: 3,
     name: "nft-preview-card-component",
-    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/nft-preview-card-component-main",
+    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/nft-preview-card-component",
   },
   {
     id: 4,
     name: "interactive-comments-section",
-    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/nft-preview-card-component-main",
+    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/interactive-comments-section",
   },
 ];
 
@@ -29,7 +29,7 @@ projects.forEach(({ name, repo, id }, i) => {
 
   id === 4 ?
   (listItem.innerHTML = `
-		<a href="/${name}/index.html">
+		<a href="/${name}/src/pages/index">
       <div class="image">
 			  <img src="/${name}/design/desktop-design.jpg" alt="${name}" />
       </div>
