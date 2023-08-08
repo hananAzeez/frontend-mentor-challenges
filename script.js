@@ -19,6 +19,11 @@ const projects = [
     name: "interactive-comments-section",
     repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/interactive-comments-section",
   },
+  {
+    id: 5,
+    name: "sunnyside-agency-landing-page",
+    repo: "https://github.com/hananAzeez/frontend-mentor-challenges/tree/master/interactive-comments-section",
+  },
 ];
 
 const list = document.getElementById("list");
