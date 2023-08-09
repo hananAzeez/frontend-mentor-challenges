@@ -4,8 +4,30 @@
     box-sizing: border-box;
 }
 
-section {
+.hero {
     height: 100vh;
     background-image: url(./images/desktop/image-header.jpg);
     background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style-type: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
 }
