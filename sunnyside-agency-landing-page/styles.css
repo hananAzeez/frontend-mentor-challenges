@@ -24,7 +24,7 @@ header {
 .navigation {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 4px;
     list-style-type: none;
 }
 
@@ -33,11 +33,19 @@ header {
     color: white;
     font-weight: 700;
     font-size: 12px;
+    padding: 8px 16px;
 }
 
 .navigation li a:hover {
     text-transform: uppercase;
     background-color: rgba(255,255,255,0.2);
-    padding: 8px 16px;
     border-radius: 16px;
+}
+
+.hero-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
 }
