@@ -80,6 +80,17 @@ header {
     height: 100%;
     object-fit: cover;
 }
-.padding {
-    padding: 32px;
+
+.text-grid {
+    padding: 64px;
+}
+
+.text-grid h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.text-grid p {
+    line-height: 1.5;
 }
