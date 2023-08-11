@@ -83,14 +83,35 @@ header {
 
 .text-grid {
     padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 450px;
 }
 
 .text-grid h3 {
     font-family: 'Fraunces', serif;
     font-size: 32px;
     font-weight: 900;
+    color: hsl(212, 27%, 19%);
 }
 
 .text-grid p {
     line-height: 1.5;
+    font-size: 14px;
+    margin-top: 24px;
+    color: hsl(213, 9%, 39%);
+}
+
+.text-grid button {
+    margin-top: 24px;
+    border: none;
+    font-family: 'Fraunces', serif;
+    background: none;
+    border-bottom: 3px solid yellow;
+
 }
