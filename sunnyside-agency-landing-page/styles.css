@@ -67,6 +67,7 @@ header {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
 }
 
@@ -114,4 +115,16 @@ header {
     background: none;
     border-bottom: 3px solid yellow;
 
+}
+
+.five {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.six {
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
