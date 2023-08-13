@@ -124,12 +124,27 @@ header {
     background-size: cover;
     padding: 64px  ;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.five p {
+    max-width: 500px;
 }
 
 .six {
     background-image: url(./images/desktop/image-photography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-        padding: 64px  ;
+    padding: 64px  ;
     text-align: center;
+        display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.six p {
+    max-width: 500px;
 }
