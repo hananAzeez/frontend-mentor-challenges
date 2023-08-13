@@ -109,12 +109,6 @@ header {
 
 }
 
-.text-grid h3 {
-}
-
-.text-grid p {
-}
-
 .text-grid button {
     margin-top: 24px;
     border: none;
@@ -128,10 +122,14 @@ header {
     background-image: url(./images/desktop/image-graphic-design.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 64px  ;
+    text-align: center;
 }
 
 .six {
     background-image: url(./images/desktop/image-photography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+        padding: 64px  ;
+    text-align: center;
 }
