@@ -94,18 +94,25 @@ header {
     max-width: 450px;
 }
 
-.text-grid h3 {
+.square h3{
     font-family: 'Fraunces', serif;
     font-size: 32px;
     font-weight: 900;
     color: hsl(212, 27%, 19%);
 }
 
-.text-grid p {
+.square p {
     line-height: 1.5;
     font-size: 14px;
     margin-top: 24px;
     color: hsl(213, 9%, 39%);
+
+}
+
+.text-grid h3 {
+}
+
+.text-grid p {
 }
 
 .text-grid button {
