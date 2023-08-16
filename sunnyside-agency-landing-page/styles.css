@@ -181,3 +181,19 @@ header {
     border-radius: 50%;
     margin-top: 32px;
 }
+
+.testimonials h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    margin-top: 16px;
+}
+
+.testimonials h5 {
+    font-size: 14px;
+    line-height: 1.5;
+    color: hsl(213, 9%, 39%);
+    text-align: center;
+    max-width: 500px;
+}
