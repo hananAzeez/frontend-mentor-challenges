@@ -148,3 +148,36 @@ header {
 .six p {
     max-width: 500px;
 }
+
+/* TESTIMONIALS */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+}
+
+.testimonials h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: 32px;
+}
+
+.testimonials p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: hsl(213, 9%, 39%);
+    text-align: center;
+    max-width: 500px;
+}
+
+.testimonials img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-top: 32px;
+}
