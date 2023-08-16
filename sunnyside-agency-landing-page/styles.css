@@ -159,6 +159,22 @@ header {
     padding: 64px;
 }
 
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 32px;
+    margin-top: 64px;
+}
+
+.testimony {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .testimonials h3 {
     font-family: 'Fraunces', serif;
     font-size: 32px;
