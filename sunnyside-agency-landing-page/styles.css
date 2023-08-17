@@ -163,7 +163,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 48px;
+    gap: 64px;
     margin-top: 64px;
 }
 
