@@ -245,6 +245,7 @@ footer {
     align-items: center;
     gap: 4px;
     list-style-type: none;
+    margin-top: 24px;
 }
 
 .footer-links li a {
@@ -257,4 +258,11 @@ footer {
 
 .footer-links li a:hover {
     color: white;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 64px;
 }
