@@ -131,6 +131,17 @@ header {
 }
 .five p {
     max-width: 500px;
+    color: hsl(167, 40%, 24%);
+}
+
+.five h3 {
+    font-size: 24px;
+    color: hsl(167, 40%, 24%);
+    
+}
+.six h3 {
+    font-size: 24px;
+    color: hsl(198, 62%, 26%);
 }
 
 .six {
@@ -143,10 +154,12 @@ header {
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    color: hsl(198, 62%, 26%);
 }
 
 .six p {
     max-width: 500px;
+    color: hsl(198, 62%, 26%);
 }
 
 .text-img-grid p{
