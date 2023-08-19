@@ -149,6 +149,12 @@ header {
     max-width: 500px;
 }
 
+.text-img-grid p{
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 280px;
+}
+
 /* TESTIMONIALS */
 
 .testimonials {
