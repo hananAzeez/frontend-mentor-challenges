@@ -290,4 +290,10 @@ footer {
     nav {
         display: none;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 }
