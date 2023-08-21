@@ -7,6 +7,10 @@
     font-family: 'Barlow', sans-serif;
 }
 
+body {
+    width: fit-content
+}
+
 .hero {
     height: 100vh;
     background-image: url(./images/desktop/image-header.jpg);
@@ -295,5 +299,12 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
+    }
+
+    .hero {
+        height: auto;
+        background-image: url(./images/mobile/image-header.jpg);
+        background-size: cover;
+        background-position: center;
     }
 }
