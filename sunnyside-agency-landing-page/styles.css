@@ -307,4 +307,12 @@ footer {
         background-size: cover;
         background-position: center;
     }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        /* grid-template-rows: 1fr; */
+        gap: 64px;
+        margin-top: 64px;
+    }
 }
