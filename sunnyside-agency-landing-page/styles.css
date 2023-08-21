@@ -315,4 +315,15 @@ footer {
         gap: 64px;
         margin-top: 64px;
     }
+
+    .hero-title {
+        color: hsl(0, 0%, 100%);
+        font-size: 48px;
+        text-align: center;
+        font-weight: 900;
+        font-family: 'Fraunces', serif;
+        letter-spacing: 7px;
+        margin-top: 120px;
+    }
+    
 }
