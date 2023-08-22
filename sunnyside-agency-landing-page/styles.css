@@ -359,4 +359,8 @@ footer {
     aspect-ratio: 2/3;
 }
     
+.two {
+    column-span: 1;
+    grid-row: 1/2;
+}
 }
