@@ -292,6 +292,10 @@ footer {
     margin-top: 64px;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 @media only screen and (max-width: 425px) {
     nav {
         display: none;
@@ -366,5 +370,9 @@ footer {
 
 header {
     padding: 2rem 2rem;
+}
+
+.mobile-menu {
+    display: block;
 }
 }
