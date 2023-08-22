@@ -126,6 +126,7 @@ header {
     background-image: url(./images/desktop/image-graphic-design.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 64px  ;
     text-align: center;
     display: flex;
@@ -152,6 +153,7 @@ header {
     background-image: url(./images/desktop/image-photography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 64px  ;
     text-align: center;
         display: flex;
@@ -351,6 +353,10 @@ footer {
     text-align: center;
     max-width: 320px;
     line-height: 1.8;
+}
+
+.text-img-grid {
+    aspect-ratio: 2/3;
 }
     
 }
