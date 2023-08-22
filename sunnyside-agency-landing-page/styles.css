@@ -363,4 +363,8 @@ footer {
     column-span: 1;
     grid-row: 1/2;
 }
+
+header {
+    padding: 2rem 2rem;
+}
 }
