@@ -55,12 +55,22 @@ header {
     background-color: hsl(0, 0%, 100%);
     width: calc(100% - 64px);
 
-    padding: 24px;
+    padding: 32px;
+}
+
+.mobile-menu-btn {
+    background-color: hsl(51, 100%, 49%);
+    margin-top: 16px !important;
+    color: black !important;
+    padding: 12px 24px;
+    border-radius: 24px;
 }
 
 .mobile-nav li a {
-    color: hsl(212, 27%, 19%);
+    color: hsl(213, 9%, 39%);
     text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .mobile-nav ul {
@@ -71,6 +81,7 @@ header {
     align-items: center;
     gap: 24px;
 }
+
 /* MOBILE NAV */
 
 .hero-title {
