@@ -60,7 +60,7 @@ header {
 
 .mobile-menu-btn {
     background-color: hsl(51, 100%, 49%);
-    margin-top: 16px !important;
+    display: block;
     color: black !important;
     padding: 12px 24px;
     border-radius: 24px;
