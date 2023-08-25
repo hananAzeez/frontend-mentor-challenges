@@ -51,7 +51,25 @@ header {
 .mobile-nav {
     position: absolute;
     top: 100%;
+    right: 24px;
     background-color: hsl(0, 0%, 100%);
+    width: 320px;
+
+    padding: 24px;
+}
+
+.mobile-nav li a {
+    color: hsl(212, 27%, 19%);
+    text-decoration: none;
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 /* MOBILE NAV */
 
