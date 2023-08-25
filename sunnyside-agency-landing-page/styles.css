@@ -51,9 +51,9 @@ header {
 .mobile-nav {
     position: absolute;
     top: 100%;
-    right: 24px;
+    /* right: 24px; */
     background-color: hsl(0, 0%, 100%);
-    width: 320px;
+    width: calc(100% - 64px);
 
     padding: 24px;
 }
@@ -65,7 +65,7 @@ header {
 
 .mobile-nav ul {
     list-style-type: none;
-    display: flex;
+        display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
