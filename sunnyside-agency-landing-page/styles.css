@@ -430,6 +430,10 @@ footer {
         display: block;
     }
 
+    .mobile-nav {
+        display: block;
+    }
+
     .hero-arrow {
         display: flex;
         align-items: center;
