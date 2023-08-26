@@ -56,10 +56,10 @@ header {
     width: calc(100% - 64px);
 
     padding: 32px;
-    display: none;
+    /* display: none; */
 }
 
-.mobile-menu-btn {
+.menu-btn-btn {
     background-color: hsl(51, 100%, 49%);
     display: block;
     color: black !important;
@@ -331,7 +331,11 @@ footer {
     margin-top: 64px;
 }
 
-.mobile-menu {
+.menu-btn {
+    display: none;
+}
+
+.is-active {
     display: none;
 }
 
@@ -426,13 +430,10 @@ footer {
         padding: 2rem 2rem;
     }
 
-    .mobile-menu {
+    .menu-btn {
         display: block;
     }
 
-    .mobile-nav {
-        display: block;
-    }
 
     .hero-arrow {
         display: flex;
