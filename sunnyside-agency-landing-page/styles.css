@@ -451,4 +451,10 @@ footer {
         gap: 64px;
         margin-top: 64px;
     }
+
+    .hero-title {
+        font-size: 64px;
+        letter-spacing: 7px;
+        margin-top: 64px;
+    }
 }
