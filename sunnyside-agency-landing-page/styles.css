@@ -465,4 +465,14 @@ footer {
     .menu-btn {
         display: block;
     }
+
+    .mobile-nav {
+        position: absolute;
+        top: 100%;
+        background-color: hsl(0, 0%, 100%);
+        width: calc(100% - 128px);
+    
+        padding: 32px;
+        /* display: none; */
+    }
 }
