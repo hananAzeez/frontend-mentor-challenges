@@ -502,5 +502,9 @@ footer {
         justify-content: center;
         margin-top: 120px;
     }
+
+    .square {
+        text-align: center;
+    }
 }
 
