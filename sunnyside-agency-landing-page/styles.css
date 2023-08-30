@@ -506,5 +506,9 @@ footer {
     .square {
         text-align: center;
     }
+
+    .square p {
+        line-height: 1.8;
+    }
 }
 
