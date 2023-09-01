@@ -328,6 +328,15 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
+    .square h3{
+        font-size: 24px;
+    }
+    
+    .square p {
+        line-height: 1.7;
+        font-size: 12px;
+    
+    }
     .testimonials-grid {
         display: grid;
         grid-template-columns: 1fr ;
