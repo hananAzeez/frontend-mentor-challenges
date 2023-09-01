@@ -178,15 +178,7 @@ header {
     color: hsl(167, 40%, 24%);
 }
 
-.five h3 {
-    font-size: 24px;
-    color: hsl(167, 40%, 24%);
-    
-}
-.six h3 {
-    font-size: 24px;
-    color: hsl(198, 62%, 26%);
-}
+
 
 .six {
     background-image: url(./images/desktop/image-photography.jpg);
@@ -207,11 +199,7 @@ header {
     color: hsl(198, 62%, 26%);
 }
 
-.text-img-grid p{
-    font-size: 13px;
-    line-height: 1.8;
-    max-width: 280px;
-}
+
 
 /* TESTIMONIALS */
 
@@ -374,6 +362,20 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
+    .five h3 {
+        font-size: 24px;
+        color: hsl(167, 40%, 24%);
+        
+    }
+    .six h3 {
+        font-size: 24px;
+        color: hsl(198, 62%, 26%);
+    }
+    .text-img-grid p{
+        font-size: 13px;
+        line-height: 1.8;
+        max-width: 280px;
+    }
     /* MOBILE NAV */
 .mobile-nav {
     position: absolute;
