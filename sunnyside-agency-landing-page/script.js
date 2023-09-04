@@ -3,7 +3,4 @@ const mobileMenu = document.querySelector(".mobile-nav");
 
 document.querySelector(".menu-btn").addEventListener("click", () => {
     mobileMenu.classList.toggle("is-active");
-    console.log("clicked")
 });
-
-console.log("hello world");
