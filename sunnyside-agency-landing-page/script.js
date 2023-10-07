@@ -5,6 +5,7 @@ const logo = document.querySelectorAll(".logo");
 document.querySelector(".menu-btn").addEventListener("click", () => {
     mobileMenu.classList.toggle("is-active");
 });
+console.log('click')
 
 logo.addEventListener("click", () => {
     console.log('clicked')
