@@ -340,7 +340,6 @@ footer {
     .testimonials-grid {
         display: grid;
         grid-template-columns: 1fr ;
-        /* grid-template-rows: 1fr; */
         gap: 64px;
         margin-top: 64px;
     }
@@ -366,7 +365,6 @@ footer {
         width: calc(100% - 128px);
     
         padding: 32px;
-        /* display: none; */
     }
 
     .five h3 {
