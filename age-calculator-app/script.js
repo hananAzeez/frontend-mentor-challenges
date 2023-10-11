@@ -19,7 +19,6 @@ const yearResult = document.getElementById("year-result");
 
 const submit = document.getElementById("submit");
 
-console.log(dayLabel.innerText);
 
 const today = new Date();
 const currentDay = today.getDate();
@@ -149,7 +148,6 @@ submit.addEventListener("click", () => {
     ((yearErrorText.innerHTML = isValidYear.errorText),
     yearErrorText.classList.remove("hidden"));
 
-  console.log("year error: ", isValidYear.errorText);
   // RESULT
   let resultYear = isValidYear.isValid && currentYear - yearValue;
   let resultMonth = isValidMonth.isValid && currentMonth - monthValue;
@@ -167,7 +165,6 @@ submit.addEventListener("click", () => {
 
   const isValidForm =
     isValidDay.isValid && isValidMonth.isValid && isValidYear.isValid;
-  console.log("month: ", isValidMonth.isValid, monthValue);
 
   !isValidForm && day.classList.add("error"),
     month.classList.add("error"),
