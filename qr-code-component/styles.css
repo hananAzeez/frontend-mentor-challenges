@@ -60,3 +60,13 @@ p {
   font-size: 15px;
   color: var(--grayishBlue);
 }
+
+/* animations */
+@keyframes slidein {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
